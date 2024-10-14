@@ -8,6 +8,7 @@ import Featured from './Components/Featured'
 import Cards from './Components/Cards'
 import Footer from './Components/Footer'
 import LocomotiveScroll from 'locomotive-scroll';
+import Loading from './Components/Loading'
 
 const App = () => {
   
@@ -15,7 +16,9 @@ const App = () => {
   const [scroll, setscroll] = useState(false)
 
   return (
-    <div onScroll={()=>{setscroll(true)}} className='w-full bg-zinc-900 min-h-screen '>
+    <div onScroll={()=>{setscroll(true)}} className='w-full relative bg-zinc-900 min-h-screen '>
+
+      <Loading />
 
       <Navbar scroll={scroll} />
       <Center />

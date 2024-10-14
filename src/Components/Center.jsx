@@ -10,7 +10,7 @@ const Center = () => {
         {["We create", "eye opening", "presentations"].map((items, index) => {
           return <div className="maskers ">
             <div className='w-fit flex gap-2 items-center'>
-              {index==1 && (<motion.div  animate={{width:"9vw"}} transition={{duration:0.5 , delay:1 , ease : [0.76, 0, 0.24, 1]}} className=' mt-3 h-[10.5vh] rounded bg-cover bg-center bg-[url(https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg)]'></motion.div>)}
+              {index==1 && (<motion.div  animate={{width:"9vw"}} transition={{duration:0.5 , delay:2 , ease : [0.76, 0, 0.24, 1]}} className=' mt-3 h-[10.5vh] rounded bg-cover bg-center bg-[url(https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg)]'></motion.div>)}
               <h1 className=' font-bold flex items-center uppercase tracking-tighter text-8xl'>{items}</h1>
             </div>
           </div>
